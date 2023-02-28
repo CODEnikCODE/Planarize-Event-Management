@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WT LAB2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+		/* Box Modelling */
+		.container {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: darkgray;
+		}
+
+		/* Add different colors to visited/unvisited links and use of text decoration on links */
+		a:link {
+			color: blue;
+			text-decoration: underline;
+		}
+
+		a:visited {
+			color: purple;
+			text-decoration: underline;
+		}
+
+		/* CSS lists - all different list item markers in lists */
+		ul {
+			list-style-type: square;
+		}
+
+		ol {
+			list-style-type: decimal;
+		}
+
+		/* CSS Opacity and Navigation bars */
+		.navbar {
+			background-color: #333;
+			opacity: 0.8;
+		}
+
+		/* Creations of multiple background using bootstrap */
+		.bg1 {
+			background: url('/Users/nikhilmishra/Downloads/top-view-flowers-collection.jpg') no-repeat center center fixed;
+			background-size: cover;
+		}
+
+		.bg2 {
+			background: url('/Users/nikhilmishra/Downloads/top-view-flowers-collection.jpg') no-repeat center center fixed;
+			background-size: cover;
+		}
+
+		/* Media tag for different devices */
+		@media only screen and (max-width: 768px) {
+			.container {
+				padding: 10px;
+			}
+		}
+
+		/* Web animation with CSS keyframes */
+		@keyframes move {
+			0% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-20px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+
+		/* Playing audio and video along with animation */
+		#audio {
+			position: absolute;
+			bottom: 10%;
+			right: 15%;
+			width: 50%;
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/Users/nikhilmishra/LandingPage.html">Planarize Event Management System</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/Users/nikhilmishra/LandingPage.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/Users/nikhilmishra/.Trash/OurTop10.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/Users/nikhilmishra/LandingPage.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/Users/nikhilmishra/LandingPage.html">Contact</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container bg1">
+            <h1>Welcome to the Event Management System</h1>
+            <p>We offer a wide range of event management services for weddings, corporate events, and more!</p>
+            <ul>
+                <li>Event planning</li>
+                <li>Vendor management</li>
+                <li>On-site coordination</li>
+                <li>Decor and design</li>
+                <li>And more!</li>
+            </ul>
+            <audio id="audio" controls>
+                <source src="/Users/nikhilmishra/Downloads/stromae-tous-les-memes.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
+        <div class="container bg2">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h3>Wedding Ceremony</h3>
+                    <p>Date: May 15, 2023</p>
+                    <p>Location: The Grand Ballroom</p>
+                </li>
+                <li>
+                    <h3>Corporate Conference</h3>
+                    <p>Date: June 20, 2023</p>
+                    <p>Location: The Convention Center</p>
+                </li>
+            </ul>
+            <video width="100%" height="auto" controls>
+                <source src="/Users/nikhilmishra/Downloads/Business Launch Event _ Promo video _ Toronto.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <script>
+            /* Implement JavaScript function to play audio on page load */
+            window.onload = function() {
+                document.getElementById("audio").play();
+            };
+        </script>

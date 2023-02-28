@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Management Platform</title>
+	<script>
+		// Define variables of various data types related to event management
+		var eventName = "Tech Conference";
+		var eventDate = new Date("2023-05-20");
+		var eventLocation = {
+			name: "Grand Convention Center",
+			address: "123 Main Street, Anytown USA"
+		};
+		var attendees = ["John Doe", "Jane Smith", "Bob Johnson", "Sally Wong"];
+		var ticketPrices = [50, 100, 150];
+
+		// Define a function that calculates the total ticket sales for an event
+		function calculateTotalSales(numTicketsSold) {
+			var totalSales = numTicketsSold * ticketPrices[0];
+			return totalSales;
+		}
+
+		// Demonstrate object properties and methods
+		console.log("Event Name: " + eventName);
+		console.log("Event Location: " + eventLocation.name + ", " + eventLocation.address);
+
+		// Demonstrate array functions
+		console.log("Attendees: " + attendees);
+		console.log("Number of Attendees: " + attendees.length);
+		console.log("First Attendee: " + attendees[0]);
+		console.log("Last Attendee: " + attendees[attendees.length-1]);
+
+		// Demonstrate string functions
+		var eventDescription = "This is a tech conference featuring keynote speakers, breakout sessions, and networking opportunities.";
+		console.log("Event Description: " + eventDescription);
+		console.log("Number of Characters in Event Description: " + eventDescription.length);
+		console.log("Uppercase Event Description: " + eventDescription.toUpperCase());
+		console.log("Lowercase Event Description: " + eventDescription.toLowerCase());
+	</script>
+</head>
+<body>
+	<h1>Event Management Platform</h1>
+	<p>This is an example web page demonstrating the use of various data types, functions, objects, arrays, and string functions in JavaScript related to an event management platform.</p>
+</body>
+</html>
