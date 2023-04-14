@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interface 2024 AI WORLD Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="CIA1.css">
+    <script src ="CIA1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<center><h2>Planarize Registration Form</h2></center>
+		<form name="myForm" action="dbregister.php" onsubmit="return validateForm()">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" onkeyup="validateName()">
+			<span id="nameErr"></span><br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" onkeyup="validateEmail()">
+			<span id="emailErr"></span><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password" onkeyup="validatePassword()">
+			<span id="passwordErr"></span><br>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
